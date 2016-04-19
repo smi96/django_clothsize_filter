@@ -8,5 +8,5 @@ class ChoiceForm(forms.Form):
                ('Medium','Medium'),
                ('Large','Large'),
                ('Xtra-Large','Xtra-Large'),	)
-    choices_picked = forms.MultipleChoiceField(choices=CHOICES, widget=forms.CheckboxSelectMultiple())
+    choices_picked = forms.MultipleChoiceField(choices=CHOICES, widget=forms.CheckboxSelectMultiple(), required=False)
     

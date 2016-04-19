@@ -35,7 +35,7 @@ def some_view(request):
 
 
 	#queryset_list = Product.objects.all()
-	paginator = Paginator(queryset_list, 10) # Show 25 contacts per page
+	paginator = Paginator(queryset_list, 9) # Show 25 contacts per page
 	page_request_var = "page"
 	page = request.GET.get(page_request_var)
 	try:
